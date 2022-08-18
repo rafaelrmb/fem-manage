@@ -22,7 +22,7 @@
         class="container relative flex items-center justify-between px-6 pt-10 mx-auto md:px-0"
       >
         <img src="images/logo.svg" alt="manage" />
-        <ul class="hidden gap-8 md:flex">
+        <ul id="main-nav" class="hidden gap-8 md:flex">
           <li>
             <a href="#" class="hover:text-darkGrayBlue">Pricing</a>
           </li>
@@ -44,6 +44,14 @@
           class="hidden px-6 py-3 font-bold rounded-full md:inline-block text-veryLightGray bg-brightRed hover:bg-red-400"
           >Get Started</a
         >
+        <button
+          id="mobile-menu-btn"
+          class="block hamburguer md:hidden"
+          aria-controls="main-nav"
+        >
+          <img src="images/icon-hamburger.svg" alt="hamburguer button" />
+          <span class="sr-only" aria-expanded="false">Menu</span>
+        </button>
       </nav>
     </header>
     <section id="hero" class="px-6 text-center md:text-left md:px-0 lg:px-32">
