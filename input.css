@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 31.25em) {
+  body {
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-size: 500px;
+    background-position: 50px -80px;
+  }
+
+  #hero {
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-size: 400px;
+    background-position: 282px bottom;
+  }
+}
+
 @media (max-width: 47.9375em) {
   #cta {
     background-image: url(../images/bg-simplify-section-mobile.svg);
