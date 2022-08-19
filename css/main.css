@@ -616,10 +616,6 @@ video {
   margin-bottom: 4rem;
 }
 
-.mt-24 {
-  margin-top: 6rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -741,10 +737,6 @@ video {
   gap: 0.5rem;
 }
 
-.self-start {
-  align-self: flex-start;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -815,6 +807,10 @@ video {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .pl-6 {
@@ -891,6 +887,39 @@ video {
 .text-brightRed {
   --tw-text-opacity: 1;
   color: hsl(12 88% 59% / var(--tw-text-opacity));
+}
+
+* {
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 31.25em) {
+  body {
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-size: 500px;
+    background-position: 50px -80px;
+  }
+
+  #hero {
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-size: 400px;
+    background-position: 282px bottom;
+  }
+}
+
+@media (max-width: 47.9375em) {
+  #cta {
+    background-image: url(../images/bg-simplify-section-mobile.svg);
+    background-position: left center;
+  }
+}
+
+@media (min-width: 48rem) {
+  #cta {
+    background-image: url(../images/bg-simplify-section-desktop.svg);
+    background-position: 75% 70%;
+    background-size: 80%;
+  }
 }
 
 .hover\:bg-red-400:hover {
