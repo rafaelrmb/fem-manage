@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+/* -------------------MOBILE MENU--------------------------*/
+@media (max-width: 48rem) {
+  #main-nav {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 6rem;
+    left: 2.5rem;
+    z-index: 1000;
+
+    border-radius: 5px;
+    background-color: white;
+    padding: 2rem 2rem;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    font-weight: 700;
+    width: 80%;
+  }
+}
+
+#main-nav.menu-expanded {
+  box-shadow: -1px 192px 274px 150px rgba(0, 0, 0, 0.69);
+  transform: translateY(0);
+}
+
+/* -------------------BACKGROUND IMAGES--------------------------*/
 * {
   background-repeat: no-repeat;
 }
