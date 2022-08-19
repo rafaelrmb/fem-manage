@@ -6,33 +6,54 @@
   background-repeat: no-repeat;
 }
 
+body,
+#hero {
+  background-image: url(../images/bg-tablet-pattern.svg);
+}
+
 @media (max-width: 31.25em) {
   body {
-    background-image: url(../images/bg-tablet-pattern.svg);
-    background-size: 500px;
-    background-position: 50px -80px;
+    background-size: 31.25rem;
+    background-position: 3.125rem -5rem;
   }
 
   #hero {
-    background-image: url(../images/bg-tablet-pattern.svg);
-    background-size: 400px;
-    background-position: 282px bottom;
+    background-size: 25rem;
+    background-position: 17.625rem bottom;
   }
 }
 
 @media (max-width: 47.9375em) {
   #cta {
     background-image: url(../images/bg-simplify-section-mobile.svg);
-    background-repeat: no-repeat;
     background-position: left center;
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 31.251em) and (max-width: 47.99em) {
+  body {
+    background-size: 37.5rem;
+    background-position: right -15rem top -12rem;
+  }
+
+  #hero {
+    background-size: 28.125rem;
+    background-position: right -15rem bottom;
+  }
+}
+
+@media (min-width: 48em) {
+  body {
+    background-position: right -8rem top -13rem;
+  }
+
   #cta {
     background-image: url(../images/bg-simplify-section-desktop.svg);
-    background-repeat: no-repeat;
     background-position: 75% 70%;
     background-size: 80%;
+  }
+
+  #hero {
+    background-image: none;
   }
 }
